@@ -11,6 +11,7 @@ class ImagesLetter extends Model
 
     protected $table = 'images_work';
 
+
     protected $fillable = [
         'image',
         'word_ru'
