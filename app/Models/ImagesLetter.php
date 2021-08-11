@@ -9,6 +9,7 @@ class ImagesLetter extends Model
 {
     use HasFactory;
 
+
     protected $table = 'images_work';
 
 
