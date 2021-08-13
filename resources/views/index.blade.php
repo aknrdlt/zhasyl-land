@@ -4,6 +4,9 @@
 </video>
 
 <form method="get" action="/send">
+    <input name="name" type="text" />
+    <input name="phone" type="text" />
+    <input name="message" type="text" />
 
     <input type="submit" value="Send"/>
 </form>

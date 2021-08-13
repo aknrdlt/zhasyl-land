@@ -1,6 +1,5 @@
-<div> {{$main->receiver}}</div>
-Hello!
-Nice to meet you!
-Have a nice day!
-
+<strong>Новая заявка!</strong><br>
+{{$main->name}} <br>
+{{$main->phone}} <br>
+{{$main->message}}<br>
 <div> {{$main->sender}}</div>
