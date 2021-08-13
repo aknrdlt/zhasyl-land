@@ -9,7 +9,7 @@ class JobOrder extends Model
 {
     use HasFactory;
 
-    protected $table = '';
+    protected $table = 'job_order';
 
     protected $fillable = [
         'word_kz',

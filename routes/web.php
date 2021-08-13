@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +20,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/index', [MainController::class, 'index']);
+
+Route::get('/send', [MailController::class, 'send']);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

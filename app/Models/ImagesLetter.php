@@ -10,7 +10,7 @@ class ImagesLetter extends Model
     use HasFactory;
 
 
-    protected $table = 'images_work';
+    protected $table = 'images_letter';
 
 
     protected $fillable = [
