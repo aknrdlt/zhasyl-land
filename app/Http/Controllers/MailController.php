@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Applications;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\DemoMail;
 use Illuminate\Http\Request;
@@ -25,6 +26,11 @@ class MailController extends Controller
             $demo -> sender = 'Zhasyl Land';
             Mail::to('aknrdlt@gmail.com')->send(new DemoMail($demo));
 
+            Applications::create([
+                'name' => $request-> input('name'),
+                'phone' => $request-> input('phone'),
+                'message' => $request-> input('message')
+            ]);
         }else{
             throw new Exception(' Заполните!');
         }
