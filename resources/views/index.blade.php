@@ -94,7 +94,7 @@
         </div>
     </div>
 </section>
-<section class="works">                            @endforeach
+<section class="works">
 
     <div class="works__inner">
         <div class="container">
