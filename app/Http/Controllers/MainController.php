@@ -25,6 +25,7 @@ class MainController extends Controller
     public function index(){
         $video = VideoBanner::find(1);
         $link = substr($video->video, 19, 50);
+
         $about_company = AboutCompany::all();
         $articles = Articles::all();
         $block_menu = BlockMenu::all();
@@ -42,6 +43,9 @@ class MainController extends Controller
         $images_work = ImagesWork::all();
         $job_order = JobOrder::all();
         $services = Services::all();
-        return view('index', compact('link'));
+        return view('index', compact('link','about_company', 'articles',
+        'block_menu', 'desc_about_company', 'desc_applications', 'desc_articles',
+        'desc_banner', 'desc_instruments', 'desc_job_order', 'desc_letter', 'desc_services',
+        'desc_work', 'images_instruments', 'images_letter', 'images_work', 'job_order', 'services' ));
     }
 }

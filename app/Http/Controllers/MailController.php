@@ -24,13 +24,12 @@ class MailController extends Controller
             $demo -> phone = $request-> input('phone');
             $demo -> message = $request-> input('message');
             $demo -> sender = 'Zhasyl Land';
-            Mail::to('aknrdlt@gmail.com')->send(new DemoMail($demo));
-
             Applications::create([
                 'name' => $request-> input('name'),
                 'phone' => $request-> input('phone'),
                 'message' => $request-> input('message')
             ]);
+            Mail::to('aknrdlt@gmail.com')->send(new DemoMail($demo));
         }else{
             throw new Exception(' Заполните!');
         }
