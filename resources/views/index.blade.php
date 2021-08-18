@@ -25,6 +25,7 @@
             <div class="header__links desktop">
                 <a class="header__link header__link-active" href="">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
                 <a class="header__link" href="">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
+                sadasd
                 <a class="header__link" href="">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
                 <a class="header__link" href="">{{$block_menu[3]['word_' . app() -> getLocale()]}} </a>
                 <a class="header__link" href="">{{$block_menu[4]['word_' . app() -> getLocale()]}}</a>
