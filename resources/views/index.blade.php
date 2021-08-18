@@ -271,7 +271,7 @@
                         </div>
                         <div class="paper__date">
                             <img src="img/paper-date.svg" alt="" />
-                            <span>{{$article['created_at']}}</span>
+                            <span>{{date_format($article['created_at'], "m.d.y H:i")}}</span>
                         </div>
                         <div class="paper__title">
                             {{$article['word_' . app() -> getLocale()]}}
