@@ -78,7 +78,7 @@
     <div class="container">
         <div class="about__inner">
             <div class="suptitle">{{$desc_services[0]['word_' . app() -> getLocale()]}}</div>
-            <div class="title">{{$desc_banner[1]['word_' . app() -> getLocale()]}}</div>
+            <div class="title">{{$desc_services[1]['word_' . app() -> getLocale()]}}</div>
             <div class="about__slider">
                 @foreach($services as $service)
                     <div class="about__wrap">
@@ -119,7 +119,7 @@
                 <div class="suptitle">{{$desc_about_company[0]['word_' . app() -> getLocale()]}}</div>
                 <div class="title">{{$desc_about_company[1]['word_' . app() -> getLocale()]}}</div>
                 <div class="subtitle">
-                    {{$desc_about_company[1]['word_' . app() -> getLocale()]}}
+                    {{$desc_about_company[2]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="company__items">
                     @foreach($about_company as $about)
@@ -206,7 +206,7 @@
             <div class="company__img eq__slider">
                 @foreach($images_instruments as $image)
                     <div class="eq__wrap">
-                        <img src="{{Voyager::image($image -> $image)}}" alt="" />
+                        <img src="{{Voyager::image($image -> image)}}" alt="" />
                     </div>
                 @endforeach
             </div>
@@ -217,9 +217,9 @@
     <div class="container">
         <div class="sertificate__inner">
             <div class="suptitle">{{$desc_letter[0]['word_' . app() -> getLocale()]}}</div>
-            <div class="title">{{$desc_instruments[1]['word_' . app() -> getLocale()]}}</div>
+            <div class="title">{{$desc_letter[1]['word_' . app() -> getLocale()]}}</div>
             <div class="sertificate__slider">
-                 @foreach($images_instruments as $image)
+                 @foreach($images_letter as $image)
                     <div class="sertificate__item">
                         <img src="{{Voyager::image($image -> image)}}" alt="" />
                     </div>
