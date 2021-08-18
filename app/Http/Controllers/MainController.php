@@ -15,6 +15,7 @@ use App\Models\DescLetter;
 use App\Models\DescServices;
 use App\Models\DescWork;
 use App\Models\ImagesInstruments;
+use App\Models\ImagesLetter;
 use App\Models\ImagesWork;
 use App\Models\JobOrder;
 use App\Models\Services;
@@ -39,7 +40,7 @@ class MainController extends Controller
         $desc_services = DescServices::all();
         $desc_work = DescWork::all();
         $images_instruments = ImagesInstruments::all();
-        $images_letter = ImagesInstruments::all();
+        $images_letter = ImagesLetter::all();
         $images_work = ImagesWork::all();
         $job_order = JobOrder::all();
         $services = Services::all();

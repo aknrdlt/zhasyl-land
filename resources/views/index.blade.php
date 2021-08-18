@@ -215,7 +215,7 @@
             </div>
             <div class="company__img eq__slider">
                 @foreach($images_instruments as $image)
-                    <div class="eq__wrap">SDS
+                    <div class="eq__wrap">
                         <img src="{{Voyager::image($image -> image)}}" alt="" />
                     </div>
                 @endforeach
@@ -228,7 +228,7 @@
         <div class="sertificate__inner">
             <div class="suptitle">{{$desc_letter[0]['word_' . app() -> getLocale()]}}</div>
             <div class="title">{{$desc_letter[1]['word_' . app() -> getLocale()]}}</div>
-            <div class="sertificate__slider">sdsd
+            <div class="sertificate__slider">
                  @foreach($images_letter as $image)
                     <div class="sertificate__item">
                         <img src="{{Voyager::image($image -> image)}}" alt="" />
