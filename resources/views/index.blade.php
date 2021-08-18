@@ -191,7 +191,7 @@
                 </div>
             </div>
         </div>
-    </div>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
+    </div>
 </section>
 <section class="company equinment">
     <div class="container">
