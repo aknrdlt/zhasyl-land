@@ -148,42 +148,42 @@
             <div class="steps__items">
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
-                        <img src="img/steps1.svg" alt="" />
+                        <img src="{{Voyager::image($job_order[0] -> image)}}" alt="" />
                         <div class="steps__item-count">1</div>
                     </div>
                     {{$job_order[0]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
-                        <img src="img/steps2.svg" alt="" />
+                        <img src="{{Voyager::image($job_order[1] -> image)}}" alt="" />
                         <div class="steps__item-count">1</div>
                     </div>
                     {{$job_order[1]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item">
                     <div class="steps__item-icon">
-                        <img src="img/steps3.svg" alt="" />
+                        <img src="{{Voyager::image($job_order[2] -> image)}}" alt="" />
                         <div class="steps__item-count">1</div>
                     </div>
                     {{$job_order[2]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
-                        <img src="img/steps4.svg" alt="" />
+                        <img src="{{Voyager::image($job_order[3] -> image)}}" alt="" />
                         <div class="steps__item-count">1</div>
                     </div>
                     {{$job_order[3]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
-                        <img src="img/steps5.svg" alt="" />
+                        <img src="{{Voyager::image($job_order[4] -> image)}}" alt="" />
                         <div class="steps__item-count">1</div>
                     </div>
                     {{$job_order[4]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item">
                     <div class="steps__item-icon">
-                        <img src="img/steps6.svg" alt="" />
+                        <img src="{{Voyager::image($job_order[5] -> image)}}" alt="" />
                         <div class="steps__item-count">1</div>
                     </div>
                     {{$job_order[5]['word_' . app() -> getLocale()]}}
