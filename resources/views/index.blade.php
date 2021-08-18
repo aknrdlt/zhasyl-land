@@ -55,7 +55,6 @@
                 <div class="language">
                     <h1 style="text-transform: uppercase">{{ Config::get('app.locale') }}</h1>
                     <div class="triangle"></div>
-
                     <div class="language_switch">
                         <div class="ru"><a href="locale/ru">ru</a></div>
 
