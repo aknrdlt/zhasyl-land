@@ -151,7 +151,7 @@
                         <img src="img/steps1.svg" alt="" />
                         <div class="steps__item-count">1</div>
                     </div>
-                    {{$dec_job_order[0]['word_' . app() -> getLocale()]}}
+                    {{$desc_job_order[0]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
