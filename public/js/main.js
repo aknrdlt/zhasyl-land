@@ -15,6 +15,12 @@ $('.works__slider').slick({
     ]
 });
 
+$(document).ready(function() {
+    $('.triangle').click(function(event) {
+        $('.language_switch, .triangle').toggleClass('active');
+    });
+});
+
 $('.sertificate__slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
