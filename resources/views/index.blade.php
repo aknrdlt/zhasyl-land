@@ -51,11 +51,7 @@
                         <img src="img/phone-header.svg" alt="" />
                         {{$block_menu[6]['word_' . app() -> getLocale()]}}</a
                     >
-                    <div class="language_switch">
-                        <div class="ru"><a href="locale/ru">ru</a></div>
-
-                        <div class="en"><a href="locale/kz">kz</a></div>
-                    </div>
+                    <div class="language"></div>
                 </div>
             </div>
         </div>
