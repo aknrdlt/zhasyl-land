@@ -45,7 +45,8 @@
 
                     </div>
 
-                </div>            </div>
+                </div>
+            </div>
             <div class="header__burger-menu">
                 <div class="header__links">
                     <a class="header__link header__link-active" href="">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
