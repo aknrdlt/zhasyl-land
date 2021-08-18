@@ -29,7 +29,7 @@ class MailController extends Controller
                 'phone' => $request-> input('phone'),
                 'message' => $request-> input('message')
             ]);
-            Mail::to('aknrdlt@gmail.com')->send(new DemoMail($demo));
+            // Mail::to('aknrdlt@gmail.com')->send(new DemoMail($demo));
         }else{
             throw new Exception(' Заполните!');
         }
