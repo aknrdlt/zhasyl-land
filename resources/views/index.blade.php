@@ -122,14 +122,24 @@
                     {{$desc_about_company[2]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="company__items">
-                    @foreach($about_company as $about)
-                        <div class="company__item">
-                            <div class="company__item-icon">
-                                <img src="{{Voyager::image($about -> image)}}" alt="" />
-                            </div>
-                            {{$about['word_' . app() -> getLocale()]}}
+                    <div class="company__item">
+                        <div class="company__item-icon">
+                            <img src="img/company-icon1.svg" alt="" />
                         </div>
-                    @endforeach
+                        {{$about_company[0]['word_' . app() -> getLocale()]}}
+                    </div>
+                    <div class="company__item">
+                        <div class="company__item-icon">
+                            <img src="img/company-icon2.svg" alt="" />
+                        </div>
+                        {{$about_company[1]['word_' . app() -> getLocale()]}}
+                    </div>
+                    <div class="company__item">
+                        <div class="company__item-icon">
+                            <img src="img/company-icon3.svg" alt="" />
+                        </div>
+                        {{$about_company[2]['word_' . app() -> getLocale()]}}
+                    </div>
                 </div>
             </div>
             <div class="company__img">
