@@ -16,7 +16,7 @@
 }
 
 .language h1{
-    font-family: Roboto;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue";
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
@@ -75,7 +75,7 @@
 .ru a{
     color: black;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue";
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
@@ -86,7 +86,7 @@
 .kz a{
     color: black;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue";
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;

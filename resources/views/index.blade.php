@@ -41,7 +41,7 @@
                     <div class="language_switch">
                         <div class="ru"><a href="locale/ru">ru</a></div>
 
-                        <div class="kz"><a href="locale/kz">en</a></div>
+                        <div class="kz"><a href="locale/kz">kz</a></div>
 
                     </div>
 
