@@ -13,6 +13,13 @@
 .language{
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.header__phone{
+    margin-right: 140px;
 }
 
 .language h1{
