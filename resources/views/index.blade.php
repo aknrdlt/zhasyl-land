@@ -25,7 +25,6 @@
             <div class="header__links desktop">
                 <a class="header__link header__link-active" href="">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
                 <a class="header__link" href="">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
-                sadasd
                 <a class="header__link" href="">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
                 <a class="header__link" href="">{{$block_menu[3]['word_' . app() -> getLocale()]}} </a>
                 <a class="header__link" href="">{{$block_menu[4]['word_' . app() -> getLocale()]}}</a>
@@ -36,8 +35,17 @@
                     <img src="img/phone-header.svg" alt="" />
                     {{$block_menu[6]['word_' . app() -> getLocale()]}}</a
                 >
-                <div class="language"></div>
-            </div>
+                <div class="language">
+                    <h1 style="text-transform: uppercase">{{ Config::get('app.locale') }}</h1>
+                    <div class="triangle"></div>
+                    <div class="language_switch">
+                        <div class="ru"><a href="locale/ru">ru</a></div>
+
+                        <div class="kz"><a href="locale/kz">en</a></div>
+
+                    </div>
+
+                </div>            </div>
             <div class="header__burger-menu">
                 <div class="header__links">
                     <a class="header__link header__link-active" href="">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
