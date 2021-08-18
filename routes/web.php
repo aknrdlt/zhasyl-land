@@ -20,6 +20,8 @@ Route::get('/', [MainController::class, 'index']);
 
 Route::get('/send', [MailController::class, 'send']);
 
+Route::get('locale/{lang}', [\App\Http\Controllers\LocalizationController::class, 'setLang']);
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
