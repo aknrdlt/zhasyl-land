@@ -19,6 +19,10 @@
     right: 0;
     top: -30px;
 }
+.footer .header__phone{
+    margin-right: 0 !important;
+}
+.title{ word-break: break-all !important; }
 
 .header__phone{
     margin-right: 100px;

@@ -26,7 +26,6 @@
                 <a class="header__link " href="#about">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
                 <a class="header__link" href="#company">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
                 <a class="header__link" href="#steps">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
-                <a class="header__link" href="#works">{{$block_menu[3]['word_' . app() -> getLocale()]}} </a>
                 <a class="header__link" href="#sert">{{$block_menu[4]['word_' . app() -> getLocale()]}}</a>
                 <a class="header__link" href="#paper">{{$block_menu[5]['word_' . app() -> getLocale()]}}</a>
             </div>
@@ -337,12 +336,11 @@
                 </a>
                 <div class="header__links">
                     <a class="header__link header__link-active" href="">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link " href="#about">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link" href="#company">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link" href="#steps">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link" href="#works">{{$block_menu[3]['word_' . app() -> getLocale()]}} </a>
-                    <a class="header__link" href="#sert">{{$block_menu[4]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link" href="#paper">{{$block_menu[5]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link " href="#about">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link" href="#company">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link" href="#works">{{$block_menu[4]['word_' . app() -> getLocale()]}} </a>
+                    <a class="header__link" href="#sert">{{$block_menu[5]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link" href="#paper">{{$block_menu[6]['word_' . app() -> getLocale()]}}</a>
                 </div>
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:+77751231875">
