@@ -36,8 +36,10 @@
                     {{$block_menu[6]['word_' . app() -> getLocale()]}}</a
                 >
                 <div class="language">
-                    <h1 style="text-transform: uppercase">{{ Config::get('app.locale') }}</h1>
-                    <div class="triangle"></div>
+                    <div style="display: flex">
+                        <h1 style="text-transform: uppercase">{{ Config::get('app.locale') }}</h1>
+                        <div class="triangle"></div>
+                    </div>
                     <div class="language_switch">
                         <div class="ru"><a href="locale/ru">ru</a></div>
 
@@ -63,8 +65,10 @@
                     >
                 </div>
                 <div class="language">
-                    <h1 style="text-transform: uppercase">{{ Config::get('app.locale') }}</h1>
-                    <div class="triangle"></div>
+                    <div style="display: flex">
+                        <h1 style="text-transform: uppercase">{{ Config::get('app.locale') }}</h1>
+                        <div class="triangle"></div>
+                    </div>
                     <div class="language_switch">
                         <div class="ru"><a href="locale/ru">ru</a></div>
 
@@ -103,9 +107,9 @@
                 @foreach($services as $service)
                     <div class="about__wrap">
                         <div class="about__item">
-                             <div class="about__item-img">
-                                 <img src="{{Voyager::image($service -> image)}}" alt="" />
-                             </div>
+                            <div class="about__item-img">
+                                <img src="{{Voyager::image($service -> image)}}" alt="" />
+                            </div>
                             <span>{{$service['word_' . app() -> getLocale()]}}</span>
                         </div>
                     </div>
@@ -249,7 +253,7 @@
             <div class="suptitle">{{$desc_letter[0]['word_' . app() -> getLocale()]}}</div>
             <div class="title">{{$desc_letter[1]['word_' . app() -> getLocale()]}}</div>
             <div class="sertificate__slider">
-                 @foreach($images_letter as $image)
+                @foreach($images_letter as $image)
                     <div class="sertificate__item">
                         <img src="{{Voyager::image($image -> image)}}" alt="" />
                     </div>
@@ -305,6 +309,7 @@
                     placeholder="{{$desc_applications[3]['word_' . app() -> getLocale()]}}"
                 />
                 <input
+                    id="phone_input"
                     name="phone"
                     class="input"
                     type="text"
@@ -351,7 +356,13 @@
     </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#phone_input").mask("+7 (999) 999-99-99");
+    });
+</script>
 </body>
 </html>
