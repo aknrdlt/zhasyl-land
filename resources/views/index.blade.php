@@ -23,12 +23,12 @@
                 <span></span>
             </div>
             <div class="header__links desktop">
-                <a class="header__link header__link-active" href="">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
-                <a class="header__link" href="about">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
-                <a class="header__link" href="">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
-                <a class="header__link" href="">{{$block_menu[3]['word_' . app() -> getLocale()]}} </a>
-                <a class="header__link" href="">{{$block_menu[4]['word_' . app() -> getLocale()]}}</a>
-                <a class="header__link" href="">{{$block_menu[5]['word_' . app() -> getLocale()]}}</a>
+                <a class="header__link " href="#about">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
+                <a class="header__link" href="#company">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
+                <a class="header__link" href="#steps">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
+                <a class="header__link" href="#works">{{$block_menu[3]['word_' . app() -> getLocale()]}} </a>
+                <a class="header__link" href="#sert">{{$block_menu[4]['word_' . app() -> getLocale()]}}</a>
+                <a class="header__link" href="#paper">{{$block_menu[5]['word_' . app() -> getLocale()]}}</a>
             </div>
             <div class="header__contacts desktop">
                 <a class="header__phone" href="tel:+77751231875">
@@ -94,11 +94,13 @@
             <div class="subtitle">
                 {{$desc_banner[2]['word_' . app() -> getLocale()]}}
             </div>
-            <button class="button">{{$desc_banner[3]['word_' . app() -> getLocale()]}}</button>
+            <a href="#request">
+                <button class="button">{{$desc_banner[3]['word_' . app() -> getLocale()]}}</button>
+            </a>
         </div>
     </div>
 </section>
-<section id="about" class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about__inner">
             <div class="suptitle">{{$desc_services[0]['word_' . app() -> getLocale()]}}</div>
@@ -118,7 +120,7 @@
         </div>
     </div>
 </section>
-<section class="works">
+<section class="works" id="works">
 
     <div class="works__inner">
         <div class="container">
@@ -136,7 +138,7 @@
         </div>
     </div>
 </section>
-<section class="company">
+<section class="company" id="company">
     <div class="container">
         <div class="company__inner">
             <div class="company__descr">
@@ -175,7 +177,7 @@
         </div>
     </div>
 </section>
-<section class="steps">
+<section class="steps"  id="steps">
     <div class="container">
         <div class="steps__inner">
             <div class="suptitle">{{$desc_job_order[0]['word_' . app() -> getLocale()]}} </div>
@@ -247,7 +249,7 @@
         </div>
     </div>
 </section>
-<section class="sertificate">
+<section class="sertificate" id="sert">
     <div class="container">
         <div class="sertificate__inner">
             <div class="suptitle">{{$desc_letter[0]['word_' . app() -> getLocale()]}}</div>
@@ -262,7 +264,7 @@
         </div>
     </div>
 </section>
-<section class="paper">
+<section class="paper" id="paper">
     <div class="container">
         <div class="paper__inner">
             <div class="suptitle">{{$desc_articles[0]['word_' . app() -> getLocale()]}}</div>
@@ -281,8 +283,9 @@
                             {{$article['word_' . app() -> getLocale()]}}
                         </div>
                         <div class="paper__more">
-                            {{$desc_articles[2]['word_' . app() -> getLocale()]}}
-                            <a href="{{$article['link']}}">
+                            {{-- {{$desc_articles[2]['word_' . app() -> getLocale()]}} --}}
+                            {{-- {{$article['link']}} --}}
+                            <a href="#">
                                 <img src="img/paper-more.svg"  alt="" />
                             </a>
                         </div>
@@ -292,7 +295,7 @@
         </div>
     </div>
 </section>
-<section class="request">
+<section class="request" id="request">
     <div class="container">
         <div class="request__inner">
             <div class="request__descr">
@@ -334,11 +337,12 @@
                 </a>
                 <div class="header__links">
                     <a class="header__link header__link-active" href="">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link" href="">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link" href="">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link" href="">{{$block_menu[3]['word_' . app() -> getLocale()]}} </a>
-                    <a class="header__link" href="">{{$block_menu[4]['word_' . app() -> getLocale()]}}</a>
-                    <a class="header__link" href="">{{$block_menu[5]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link " href="#about">{{$block_menu[0]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link" href="#company">{{$block_menu[1]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link" href="#steps">{{$block_menu[2]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link" href="#works">{{$block_menu[3]['word_' . app() -> getLocale()]}} </a>
+                    <a class="header__link" href="#sert">{{$block_menu[4]['word_' . app() -> getLocale()]}}</a>
+                    <a class="header__link" href="#paper">{{$block_menu[5]['word_' . app() -> getLocale()]}}</a>
                 </div>
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:+77751231875">
