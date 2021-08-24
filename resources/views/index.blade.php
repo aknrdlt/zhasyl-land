@@ -81,7 +81,7 @@
     </div>
 </header>
 <section class="main">
-    <video autoplay playsinline loop id="myVideo" src="{{ asset("storage/$link") }}" type="video/mp4">
+    <video autoplay="true" playsinline="true" loop="true" id="myVideo" src="{{ asset("storage/$link") }}" type="video/mp4">
     </video>
     <div class="main__inner">
         <div class="container">
