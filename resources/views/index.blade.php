@@ -81,7 +81,7 @@
     </div>
 </header>
 <section class="main">
-    <video loop id="myVideo" src="{{ asset("storage/$link") }}" type="video/mp4">
+    <video autoplay loop id="myVideo" src="{{ asset("storage/$link") }}" type="video/mp4">
     </video>
     <div class="main__inner">
         <div class="container">
@@ -379,9 +379,6 @@
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 <script>
-      var vid = document.getElementById("#myVideo");
-      vid.autoplay = true;
-      
     $(document).ready(function() {
         $("#phone_input").mask("+7 (999) 999-99-99");
     });
