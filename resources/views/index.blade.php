@@ -386,7 +386,7 @@
     var vid = document.getElementById("myVideo");
     vid.muted = false;
     vid.autoplay= true;
-    ;
+    
     setTimeout(()=>{
         vid.setAttribute("playsinline,"true");
     },1000);
