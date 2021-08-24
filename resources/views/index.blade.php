@@ -383,7 +383,7 @@
         $("#phone_input").mask("+7 (999) 999-99-99");
     });
     
-    var vid = document.getElementById("#myVideo");
+    var vid = document.getElementById("myVideo");
     vid.muted = false;
     vid.autoplay= true;
     vid.loop = true';
