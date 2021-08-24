@@ -379,9 +379,13 @@
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 <script>
+      var vid = document.getElementById("#myVideo");
+    vid.muted = false;
     $(document).ready(function() {
         $("#phone_input").mask("+7 (999) 999-99-99");
     });
+    
+    
 </script>
 </body>
 </html>
