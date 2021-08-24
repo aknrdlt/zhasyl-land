@@ -387,7 +387,9 @@
     vid.muted = false;
     vid.autoplay= true;
     vid.loop = true';
+    setTimeout(()=>{
     vid.playsinline = true;
+    },1000);
 </script>
 </body>
 </html>
