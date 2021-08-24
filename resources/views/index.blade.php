@@ -81,7 +81,7 @@
     </div>
 </header>
 <section class="main">
-    <video id="myVideo" src="{{ asset("storage/$link") }}" type="video/mp4">
+    <video id="myVideo" src="{{ asset("storage/$link") }}" type="video/mp4" autoplay="true" loop="true">
     </video>
     <div class="main__inner">
         <div class="container">
@@ -388,7 +388,7 @@
     vid.autoplay= true;
     vid.loop = true';
     setTimeout(()=>{
-    vid.playsinline = true;
+        vid.setAttribute("playsinline,"true");
     },1000);
 </script>
 </body>
