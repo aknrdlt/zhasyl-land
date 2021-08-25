@@ -50,25 +50,31 @@ $('.eq__slider').slick({
         }
     ]
 });
-
 $('.about__slider').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    nextArrow: `<button type="button" class="slick-right"><img src="../img/works-arrowR.svg"></button>`,
-    prevArrow: `<button type="button" class="slick-left"><img src="../img/works-arrowL.svg"></button>`,
+    nextArrow: <button type="button" class="slick-right"><img src="../img/works-arrowR.svg"></button>,
+    prevArrow: <button type="button" class="slick-left"><img src="../img/works-arrowL.svg"></button>,
     responsive: [
         {
-            breakpoint: 991,
+            breakpoint: 1200,
             settings: {
                 arrows: false,
                 slidesToShow: 3
             }
         },
         {
+            breakpoint: 991,
+            settings: {
+                arrows: false,
+                slidesToShow: 2
+            }
+        },
+        {
             breakpoint: 767,
             settings: {
-                nextArrow: `<button type="button" class="slick-right"><img src="../img/works-arrowR.svg"></button>`,
-                prevArrow: `<button type="button" class="slick-left"><img src="../img/works-arrowL.svg"></button>`,
+                nextArrow: <button type="button" class="slick-right"><img src="../img/works-arrowR.svg"></button>,
+                prevArrow: <button type="button" class="slick-left"><img src="../img/works-arrowL.svg"></button>,
                 slidesToShow: 1
             }
         }
