@@ -383,7 +383,7 @@
         $("#phone_input").mask("+7 (999) 999-99-99");
     });
     var video = document.getElementById('myVideo');
-    var.muted = false;
+    var muted = false;
    
 </script>
 </body>
