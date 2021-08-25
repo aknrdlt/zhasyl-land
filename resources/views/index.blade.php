@@ -81,7 +81,7 @@
     </div>
 </header>
 <section class="main">
-    <video id="myVideo" src="{{ asset("storage/$link") }}" type="video/mp4" autoplay="true" loop="true">
+    <video id="myVideo" playinline autoplay loop muted src="{{ asset("storage/$link") }}" type="video/mp4">
     </video>
     <div class="main__inner">
         <div class="container">
@@ -382,14 +382,9 @@
     $(document).ready(function() {
         $("#phone_input").mask("+7 (999) 999-99-99");
     });
-    
-    var vid = document.getElementById("myVideo");
-    vid.muted = false;
-    vid.autoplay= true;
-    
-    setTimeout(()=>{
-        vid.setAttribute("playsinline,"true");
-    },1000);
+    var video = document.getElementById('myVideo');
+    var.muted = false;
+   
 </script>
 </body>
 </html>
