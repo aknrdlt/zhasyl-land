@@ -58,10 +58,10 @@
                     <a class="header__link" href="">{{$block_menu[5]['word_' . app() -> getLocale()]}}</a>
                 </div>
                 <div class="header__contacts">
-                    <a class="header__phone" href="tel:+77751231875">
+                    <a class="header__phone" href="tel:{{$block_menu[6]['word_' . app() -> getLocale()]}}">
                         <img src="img/phone-header.svg" alt="" />
-                        {{$block_menu[6]['word_' . app() -> getLocale()]}}</a
-                    >
+                        {{$block_menu[6]['word_' . app() -> getLocale()]}}
+                    </a>
                 </div>
                 <div class="language">
                     <div style="display: flex">
