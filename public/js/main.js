@@ -58,10 +58,17 @@ $('.about__slider').slick({
     prevArrow: `<button type="button" class="slick-left"><img src="../img/works-arrowL.svg"></button>`,
     responsive: [
         {
-            breakpoint: 991,
+            breakpoint: 1200,
             settings: {
                 arrows: false,
                 slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                arrows: false,
+                slidesToShow: 2
             }
         },
         {
