@@ -30,11 +30,6 @@
 .footer .header__phone{
     margin-right: 0 !important;
 }
-
-@media(max-width: 767px){
-    .title{ word-break: break-all !important; }
-}
-
 .header__phone{
     margin-right: 100px;
 }
