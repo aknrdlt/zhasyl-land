@@ -15,7 +15,7 @@
     
 </head>
 <body>
- <audio id="audioPlay" autoplay controls loop muted>
+ <audio id="audioPlay" autoplay controls loop muted="muted">
         <source src="{{ asset("storage/$link_music") }}" type="audio/mp3">
     </audio>
 <script>
@@ -23,7 +23,7 @@ const body = document.querySelector('body');
 body.addEventListener('mouseenter',function(){
     document.querySelector('#audioPlay').play();
     document.querySelector('#audioPlay').muted = false;
-    body.removeEventListener('mouseenter');
+    body.removeEventListener('mouseenter',this);
 });
 </script>
 <header class="header">
