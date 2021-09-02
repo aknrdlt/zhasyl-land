@@ -15,6 +15,9 @@
 </head>
 <body>
 <header class="header">
+<audio id="player" autoplay controls loop>
+        <source src="{{ asset("storage/$music") }}" type="audio/mp3">
+    </audio>
     <div class="container">
         <div class="header__inner">
             <a class="header__logo" href="">
