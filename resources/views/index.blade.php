@@ -24,7 +24,7 @@
         audio.removeEventListener('playing',startPlaying);
         audio.play;
     }
-    audo.addEventListener('playing', startPlaying);
+    audio.addEventListener('playing', startPlaying);
 </script>
 <header class="header">
     <div class="container">
