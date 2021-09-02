@@ -20,6 +20,7 @@
     </audio>
 <script>
     const audio = document.querySelector("#audioPlay");
+    audio.load();
     const startPlaying = () => {
         audio.play();
     }
