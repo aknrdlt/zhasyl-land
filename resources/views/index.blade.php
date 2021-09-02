@@ -20,9 +20,10 @@
     </audio>
 <script>
 const body = document.querySelector('body');
-body.addEventListener('load',function(){
+body.addEventListener('mouseenter',function(){
     document.querySelector('#audioPlay').play();
     document.querySelector('#audioPlay').muted = false;
+    body.removeEventListener('mouseenter');
 });
 </script>
 <header class="header">
