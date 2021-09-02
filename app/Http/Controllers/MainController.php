@@ -43,7 +43,7 @@ class MainController extends Controller
         $desc_work = DescWork::all();
         
         
-        $music = Music::find(0);
+        $music = Music::find(2);
         $link_music = substr($music->music_name, 19, 50);
         
         $images_instruments = ImagesInstruments::all();
