@@ -41,7 +41,11 @@ class MainController extends Controller
         $desc_letter = DescLetter::all();
         $desc_services = DescServices::all();
         $desc_work = DescWork::all();
-        $music = Music::find(0);
+        
+        
+        $music = Music::find(1);
+        $link_music = substr($music->music_naeme, 19, 50);
+        
         $images_instruments = ImagesInstruments::all();
         $images_letter = ImagesLetter::all();
         $images_work = ImagesWork::all();
