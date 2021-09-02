@@ -20,7 +20,7 @@
     </audio>
 <script>
 const body = document.querySelector('body');
-body.addEventListener('mouseenter',function(){
+body.addEventListener('mousemove',function(){
 document.querySelector('#audioPlay').play();
     document.querySelector('#audioPlay').muted = false;
 });
