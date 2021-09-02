@@ -20,10 +20,10 @@
     </audio>
 <script>
 const body = document.querySelector('body');
-body.addEventListener('mousemove',function(){
+body.addEventListener('click',function(){
     document.querySelector('#audioPlay').play();
 });
-body.dispatchEvent(new Event('scroll'));
+body.dispatchEvent(new Event('click'));
 </script>
 <header class="header">
     <div class="container">
