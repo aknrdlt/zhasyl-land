@@ -44,7 +44,7 @@ class MainController extends Controller
         
         
         $music = Music::find(1);
-        $link_music = substr($music->music_naeme, 19, 50);
+        $link_music = substr($music->music_name, 19, 50);
         
         $images_instruments = ImagesInstruments::all();
         $images_letter = ImagesLetter::all();
