@@ -22,9 +22,12 @@
     const audio = document.querySelector("#audioPlay");
     const startPlaying = () => {
         audio.removeEventListener('playing',startPlaying);
-        audio.play;
+        audio.play();
     }
     audio.addEventListener('playing', startPlaying);
+    document.querySelector('.header').addEventListener('click', function(){
+        audio.play();
+    });
 </script>
 <header class="header">
     <div class="container">
