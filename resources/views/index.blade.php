@@ -21,10 +21,9 @@
 <script>
     const audio = document.querySelector("#audioPlay");
     const startPlaying = () => {
-        audio.removeEventListener('playing',startPlaying);
         audio.play();
     }
-    audio.addEventListener('playing', startPlaying);
+    audio.addEventListener('load', startPlaying);
     document.querySelector('body').addEventListener('scroll', function(){
         audio.play();
     });
