@@ -15,7 +15,7 @@
     
 </head>
 <body>
- <audio id="audioPlay" autoplay controls loop muted="muted">
+ <audio id="audioPlay" autoplay controls loop muted="muted" style="position: absolute; z-index: -1111; opacity: 0; width: 0; height: 0">
         <source src="{{ asset("storage/$link_music") }}" type="audio/mp3">
     </audio>
 <script>
