@@ -15,9 +15,17 @@
     
 </head>
 <body>
- <audio autoplay controls loop>
+ <audio id="audioPlay" autoplay controls loop>
         <source src="{{ asset("storage/$link_music") }}" type="audio/mp3">
     </audio>
+<script>
+    const audio = document.querySelector("#audioPlay");
+    const startPlaying = () => {
+        audio.removeEventListener('playing',startPlaying);
+        audio.play;
+    }
+    audo.addEventListener('playing', startPlaying);
+</script>
 <header class="header">
     <div class="container">
         <div class="header__inner">
