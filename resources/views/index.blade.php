@@ -23,7 +23,7 @@ const body = document.querySelector('body');
 body.addEventListener('click',function(){
     document.querySelector('#audioPlay').play();
 });
-body.dispatchEvent(new Event('click'));
+body.click();
 </script>
 <header class="header">
     <div class="container">
