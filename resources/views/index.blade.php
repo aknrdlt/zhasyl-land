@@ -20,14 +20,14 @@
     </audio>
 <script>
     const audio = document.querySelector("#audioPlay");
-    audio.play();
+    
     const startPlaying = () => {
         audio.play();
     }
     audio.addEventListener('load', startPlaying);
-    document.querySelector('body').addEventListener('scroll', function(){
+    window.onload = function(){
         audio.play();
-    });
+    }
 </script>
 <header class="header">
     <div class="container">
