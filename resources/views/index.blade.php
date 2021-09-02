@@ -12,12 +12,13 @@
         rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.min.css" />
+    
 </head>
 <body>
-<header class="header">
-    <audio id="player" autoplay controls loop>
+ <audio id="player" autoplay controls loop>
         <source src="{{ asset("storage/$music") }}" type="audio/mp3">
     </audio>
+<header class="header">
     <div class="container">
         <div class="header__inner">
             <a class="header__logo" href="">
