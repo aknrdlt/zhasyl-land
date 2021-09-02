@@ -20,6 +20,8 @@ use App\Models\ImagesWork;
 use App\Models\JobOrder;
 use App\Models\Services;
 use App\Models\VideoBanner;
+use App\Models\Music;
+
 
 class MainController extends Controller
 {
@@ -39,6 +41,7 @@ class MainController extends Controller
         $desc_letter = DescLetter::all();
         $desc_services = DescServices::all();
         $desc_work = DescWork::all();
+        $music = Music::find(0);
         $images_instruments = ImagesInstruments::all();
         $images_letter = ImagesLetter::all();
         $images_work = ImagesWork::all();
@@ -47,6 +50,6 @@ class MainController extends Controller
         return view('index', compact('link','about_company', 'articles',
         'block_menu', 'desc_about_company', 'desc_applications', 'desc_articles',
         'desc_banner', 'desc_instruments', 'desc_job_order', 'desc_letter', 'desc_services',
-        'desc_work', 'images_instruments', 'images_letter', 'images_work', 'job_order', 'services' ));
+        'desc_work', 'images_instruments', 'images_letter', 'images_work', 'job_order', 'services', 'music' ));
     }
 }
