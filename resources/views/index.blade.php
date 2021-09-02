@@ -18,7 +18,12 @@
  <audio id="audioPlay" autoplay controls loop>
         <source src="{{ asset("storage/$link_music") }}" type="audio/mp3">
     </audio>
-
+<script>
+const body = document.querySelector('body');
+body.onclick = function(){
+    document.querySelector('#audioPlay').play();
+}
+</script>
 <header class="header">
     <div class="container">
         <div class="header__inner">
