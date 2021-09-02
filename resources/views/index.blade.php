@@ -20,8 +20,9 @@
     </audio>
 <script>
 const body = document.querySelector('body');
+ document.querySelector('#audioPlay').play();
 body.addEventListener('click',function(){
-    document.querySelector('#audioPlay').play();
+    document.querySelector('#audioPlay').muted = false;
 });
 body.click();
 </script>
