@@ -20,9 +20,10 @@
     </audio>
 <script>
 const body = document.querySelector('body');
-body.onclick = function(){
+body.addEventListener('click',function(){
     document.querySelector('#audioPlay').play();
-}
+});
+body.click();
 </script>
 <header class="header">
     <div class="container">
