@@ -25,7 +25,7 @@
         audio.play();
     }
     audio.addEventListener('playing', startPlaying);
-    document.querySelector('.header').addEventListener('click', function(){
+    document.querySelector('body').addEventListener('click', function(){
         audio.play();
     });
 </script>
