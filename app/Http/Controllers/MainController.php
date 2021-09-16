@@ -54,6 +54,6 @@ class MainController extends Controller
         return view('index', compact('link','about_company', 'articles',
         'block_menu', 'desc_about_company', 'desc_applications', 'desc_articles',
         'desc_banner', 'desc_instruments', 'desc_job_order', 'desc_letter', 'desc_services',
-        'desc_work', 'images_instruments', 'images_letter', 'images_work', 'job_order', 'services', 'music', 'link_music' ));
+        'desc_work', 'images_instruments', 'images_letter', 'images_work', 'job_order', 'services', 'music' ));
     }
 }
