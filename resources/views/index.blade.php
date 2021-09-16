@@ -147,9 +147,6 @@ body.addEventListener('mouseenter',function(){
                 <div class="works__item">
                     <img src="{{Voyager::image($image -> image)}}" alt="" />
                 </div>
-                <div class="works__item">
-                    <video src="img/main-video.mp4"></video>
-                </div>
             @endforeach
         </div>
     </div>
