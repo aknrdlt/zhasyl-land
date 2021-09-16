@@ -18,7 +18,7 @@
  <audio id="audioPlay" autoplay controls loop muted="muted" style="position: absolute; z-index: -1111; opacity: 0; width: 0; height: 0">
         <source src="/storage/{{$music->music_name}}" type="audio/mp3">
     </audio>
-<script>
+<script> 
 const body = document.querySelector('body');
 body.addEventListener('mouseenter',function(){
     document.querySelector('#audioPlay').play();
@@ -260,6 +260,7 @@ body.addEventListener('mouseenter',function(){
                     <div class="eq__wrap">
                         <img src="{{Voyager::image($image -> image)}}" alt="" />
                     </div>
+                    {{$image->video}}
                 @endforeach
             </div>
         </div>
