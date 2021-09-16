@@ -148,7 +148,7 @@ body.addEventListener('mouseenter',function(){
                     <img src="{{Voyager::image($image -> image)}}" alt="" />
                 </div>
                 <div class="works__item">
-                <iframe width="50%" height="315" src="https://www.youtube.com/embed/s9iEu_3mSFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="90%" height="315" src="https://www.youtube.com/embed/s9iEu_3mSFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             @endforeach
         </div>
