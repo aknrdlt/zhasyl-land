@@ -120,7 +120,7 @@ body.addEventListener('mouseenter',function(){
                     <div class="about__wrap">
                         <div class="about__item">
                             <div class="about__item-img">
-                                <img src="{{$service->image}}" alt="" />
+                                <img src="/storage/{{$service->image}}" alt="" />
                             </div>
                             <span>{{$service['word_' . app() -> getLocale()]}}</span>
                             <div class="about__item-hover">
