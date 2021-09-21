@@ -186,7 +186,7 @@ body.addEventListener('mouseenter',function(){
                 </div>
             </div>
             <div class="company__img">
-                <img src="{{Voyager::image($about_company[3] -> image)}}" alt="" />
+                <img src="/storage/{{$about_company[3] -> image}}" alt="" />
                 <div class="company__year">
                     <div>{{$about_company[3]['word_' . app() -> getLocale()]}}</div>
                 </div>
@@ -202,42 +202,42 @@ body.addEventListener('mouseenter',function(){
             <div class="steps__items">
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
-                        <img src="{{Voyager::image($job_order[0] -> image)}}" alt="" />
+                        <img src="/storage/{{$job_order[0] -> image}}" alt="" />
                         <div class="steps__item-count">1</div>
                     </div>
                     {{$job_order[0]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
-                        <img src="{{Voyager::image($job_order[1] -> image)}}" alt="" />
+                        <img src="/storage/{{$job_order[1] -> image}}" alt="" />
                         <div class="steps__item-count">2</div>
                     </div>
                     {{$job_order[1]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item">
                     <div class="steps__item-icon">
-                        <img src="{{Voyager::image($job_order[2] -> image)}}" alt="" />
+                        <img src="/storage/{{$job_order[2] -> image}}" alt="" />
                         <div class="steps__item-count">3</div>
                     </div>
                     {{$job_order[2]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
-                        <img src="{{Voyager::image($job_order[3] -> image)}}" alt="" />
+                        <img src="/storage/{{$job_order[3] -> image}}}" alt="" />
                         <div class="steps__item-count">4</div>
                     </div>
                     {{$job_order[3]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item steps__item-arrow">
                     <div class="steps__item-icon">
-                        <img src="{{Voyager::image($job_order[4] -> image)}}" alt="" />
+                        <img src="/storage/{{$job_order[4] -> image}}" alt="" />
                         <div class="steps__item-count">5</div>
                     </div>
                     {{$job_order[4]['word_' . app() -> getLocale()]}}
                 </div>
                 <div class="steps__item">
                     <div class="steps__item-icon">
-                        <img src="{{Voyager::image($job_order[5] -> image)}}" alt="" />
+                        <img src="/storage/{{$job_order[5] -> image}}" alt="" />
                         <div class="steps__item-count">6</div>
                     </div>
                     {{$job_order[5]['word_' . app() -> getLocale()]}}
@@ -259,7 +259,7 @@ body.addEventListener('mouseenter',function(){
             <div class="company__img eq__slider">
                 @foreach($images_instruments as $image)
                     <div class="eq__wrap">
-                        <img src="{{Voyager::image($image -> image)}}" alt="" />
+                        <img src="/storage/{{$image -> image}}" alt="" />
                     </div>
                     {{$image->video}}
                 @endforeach
@@ -275,7 +275,7 @@ body.addEventListener('mouseenter',function(){
             <div class="sertificate__slider">
                 @foreach($images_letter as $image)
                     <div class="sertificate__item">
-                        <img src="{{Voyager::image($image -> image)}}" alt="" />
+                        <img src="/storage/{{$image -> image)}}" alt="" />
                     </div>
                 @endforeach
             </div>
@@ -291,7 +291,7 @@ body.addEventListener('mouseenter',function(){
                 @foreach($articles as $article)
                     <div class="paper__item">
                         <div class="paper__img">
-                            <img src="{{Voyager::image($article -> image)}}" alt="" />
+                            <img src="/storage/{{$article -> image}}" alt="" />
                         </div>
                         <div class="paper__date">
                             <img src="img/paper-date.svg" alt="" />
