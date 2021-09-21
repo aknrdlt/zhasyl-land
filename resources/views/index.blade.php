@@ -145,7 +145,7 @@ body.addEventListener('mouseenter',function(){
         <div class="works__slider">
             @foreach($images_work as $image)
                 <div class="works__item">
-                    <img src="{{Voyager::image($image -> image)}}" alt="" />
+                    <img src="/storage/{{$image -> image}}" alt="" />
                 </div>
                 <div class="works__item">
                     <video autoplay loop muted playsinline id="myVideo"  src="{{ asset("storage/$link") }}" type="video/mp4">
