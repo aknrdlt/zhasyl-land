@@ -275,7 +275,7 @@ body.addEventListener('mouseenter',function(){
             <div class="sertificate__slider">
                 @foreach($images_letter as $image)
                     <div class="sertificate__item">
-                        <img src="/storage/{{$image -> image)}}" alt="" />
+                        <img src="/storage/{{$image -> image}}" alt="" />
                     </div>
                 @endforeach
             </div>
